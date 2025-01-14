@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: facetest-deployment
+spec:
+  selector: 
+    matchLabels:
+      app: facetest-app 
+  template: 
+    metadata:
+      labels: 
+        app: facetest-app
+
+    spec:
+      containers: 
+      - name: facetest-container
+        image: theoafactor/facetest:1.0.0
+        ports:
+        - containerPort: 80
