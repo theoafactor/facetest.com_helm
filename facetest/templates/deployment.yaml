@@ -14,6 +14,6 @@ spec:
     spec:
       containers: 
       - name: facetest-container
-        image: theoafactor/facetest:2.0.0
+        image: theoafactor/facetest:3.0.0
         ports:
         - containerPort: 80
